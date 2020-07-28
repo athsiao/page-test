@@ -3,6 +3,25 @@
     <head>
         <meta charset="utf-8">
         <link rel="stylesheet" href="styles.css">
+
+        <!-- Responsive design -->
+        <style>
+        @media (min-width: 992px) {
+            .item {
+                width: 33.33%;
+            }
+            .last-item {
+                width: 33.33%;
+            }
+        }
+
+        @media (min-width: 769px) and (max-width: 991px) {
+            .item {
+                width: 50%;
+            }
+        }
+        </style>
+
         <title>
             Pok&eacutemon Caf&eacute Menu
         </title>
@@ -11,7 +30,32 @@
     <body>
         <div id="main-body">
             <h1>Pok&eacutemon Caf&eacute Menu</h1>
-            <p>Here's everything after it dawg</p>
+            <div class="menu">
+                <div class="item">
+                    <div class="card">
+                        <img src="assets/fluffyeeveepancakes.png">
+                        Item 1
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="card">
+                        <img src="assets/dugtriosandwichtrio.png">
+                        Item 2
+                    </div>
+                </div>
+                <div class="last-item">
+                    <div class="card">
+                        <img src="assets/nuttybunearyfrappe.png">
+                        Item 3
+                    </div>
+                </div>
+            </div>
+            <footer>
+            <div>
+                Images &copy Pok&eacutemon Caf&eacute Mix
+            </footer>
+
         </div>
+        
     </body>
 </html>
